@@ -1,0 +1,31 @@
+{
+    "name": "Righting",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Connect to ChatGPT",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "editor.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "bookmarks",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.blogger.com/",
+        "https://platform.openai.com/"
+    ],
+    "optional_host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+}

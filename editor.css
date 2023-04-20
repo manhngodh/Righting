@@ -1,0 +1,31 @@
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+  }
+  
+  textarea {
+    width: 80%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #output {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+  }
